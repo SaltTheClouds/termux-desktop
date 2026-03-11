@@ -52,7 +52,7 @@ pkg upgrade && pkg install git
 git clone https://github.com/SaltTheClouds/termux-desktop.git
 ```
 
-> **Warning** : I'm assuming that you're doing this on a fresh termux install. If not, I'll suggest you to do so. However the `setup.sh` script backup every file it replace, It's still recommended that you manually backup your files in order to avoid conflicts. <br />
+> **Warning** : I'm assuming that you're doing this on a fresh termux install. If not, I'll suggest you to do so. The `setup.sh` script creates a backup of every file it replaces but it's still recommended that you manually backup your files in order to avoid conflicts. <br />
 
 - Change to cloned directory and run `setup.sh` with *--install* option
 ```
@@ -61,7 +61,7 @@ chmod +x setup.sh
 ./setup.sh --install
 ```
 
-> If script `setup.sh` fails during package installation (due to network issues), you can re-execute it again.
+> If script `setup.sh` fails during package installation (due to network issues), you can re-execute it.
 
 - During installation, you'll be asked to set up password for **VNC** -
 ```
@@ -108,7 +108,7 @@ Log file is /data/data/com.termux/files/home/.vnc/localhost:1.log
 
 ### Uninstallation
 
-If you ever want to uninstall Termux Desktop, just run `setup.sh` with *--uninstall* option. Just keep the `setup.sh` script and delete the cloned repository to save space. I'll create a separate uninstaller script later. The command below will remove all the packages and delete all the config files it installed, including the changes you've made. So, Be careful there...
+If you ever want to uninstall Termux Desktop, just run `setup.sh` with *--uninstall* option. Just keep the `setup.sh` script and delete the cloned repository to save space. The command below will remove all the packages and delete all the config files it installed, including the changes you've made. So, Be careful there...
 ```
 ./setup.sh --uninstall
 ```
@@ -127,7 +127,7 @@ Address:
 Name:
 Termux
 ```
-Now launch it. You will be prompted for `password` that you entered during installation. After entering password, you'll be headed directly to this desktop - <br />
+Now launch it. You will be prompted for the `password` that you entered during installation. After entering the password, you'll be taken directly to this desktop - <br />
 
 ![desktop](./previews/desk_1.png) <br />
 
