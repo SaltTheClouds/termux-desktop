@@ -1,9 +1,3 @@
-**`LAST Updated`** : `August 2023`
-
-> Unmaintained : Due to Termux not working properly on new Android versions and also Termux not getting maintained properly.
-
----
-
 ![logo](./previews/logo.png) <br />
 
 <p align="center">
